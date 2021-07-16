@@ -63,12 +63,6 @@ app.get("/n2", (req, res) => {
   res.json(end - start + " ms");
 });
 
-app.get("/logn", (req, res) => {
-  const start = performance.now();
-  const end = performance.now();
-  res.json(end - start + " ms");
-});
-
 app.listen(PORT, () => {
   console.log("Example app listening on port " + PORT);
 });
